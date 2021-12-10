@@ -5,18 +5,20 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: "font1", sans-serif;
 }
 .sec1 {
   display: flex;
+  align-items: center;
   height: 75vh;
   border: 1px solid lightgray;
 }
 .s1t {
   width: 50%;
-  padding: 230px 30px;
+  padding: 0 30px;
 }
 .s1t h1 {
   padding: 15px 0;
@@ -42,21 +44,24 @@ body {
 .img1 {
   background: url(./images/banner-1.jpg) right/cover;
   width: 50%;
+  height: 100%;
 }
 .sec2 {
   display: flex;
+  align-items: center;
   height: 50vh;
 }
 .img2 {
   background: url(./images/banner-2.jpg) center/cover;
+  height: 100%;
   width: 45%;
 }
 .s2t {
   width: 55%;
-  padding: 120px 30px;
+  padding: 0 30px;
 }
 .s2t h2 {
-  padding: 15px 0;
+  padding: 15px 30px;
   font-size: 2rem;
   font-weight: 100;
 }
@@ -65,12 +70,13 @@ body {
 }
 .sec3 {
   display: flex;
+  align-items: center;
   height: 50vh;
   border: 1px solid lightgray;
 }
 .s3t {
   width: 55%;
-  padding: 120px 30px;
+  padding: 0px 30px;
 }
 .s3t h2 {
   padding: 15px 0;
@@ -82,6 +88,7 @@ body {
 }
 .img3 {
   background: url(./images/banner-3.jpg) center/cover;
+  height: 100%;
   width: 45%;
 }
 .form{
@@ -178,9 +185,6 @@ body {
   .sec1 {
     height: 50vh;
   }
-  .s1t{
-    padding: 100px 30px;
-  }
   .s1t h1{
     font-size: 2rem;
   }
@@ -190,18 +194,12 @@ body {
   .btn{
     font-size: 0.55rem;
   }
-  .s2t {
-    padding: 80px 30px;
-  }
   .s2t h2 {
     font-size: 1.5rem;
   }
   .s2t p {
     line-height: 25px;
     font-size: 0.75rem;
-  }
-  .s3t {
-    padding: 80px 30px;
   }
   .s3t h2 {
     font-size: 1.5rem;
