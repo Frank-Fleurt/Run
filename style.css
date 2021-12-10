@@ -151,22 +151,138 @@ body {
 }
 .grid :nth-child(7) {
   grid-area: btn;
-  width: 20%;
-  margin: 0 auto;
-  height: 30px;
+  width: 130px;
+  margin: 20px auto;
 }
 .networks{
-  text-align: center;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 .networks div{
   margin: 60px 40px;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border: 1px solid lightgray ;
-  border-radius: 50%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
-.networks i{
-  padding: 7px;
+.networks div:hover{
+  background: lightgray;
+}
+ 
+@media (max-width:900px) {
+  .sec1 {
+    height: 50vh;
+  }
+  .s1t{
+    padding: 100px 30px;
+  }
+  .s1t h1{
+    font-size: 2rem;
+  }
+  .s1t p{
+    font-size: 0.75rem;
+  }
+  .btn{
+    font-size: 0.55rem;
+  }
+  .s2t {
+    padding: 80px 30px;
+  }
+  .s2t h2 {
+    font-size: 1.5rem;
+  }
+  .s2t p {
+    line-height: 25px;
+    font-size: 0.75rem;
+  }
+  .s3t {
+    padding: 80px 30px;
+  }
+  .s3t h2 {
+    font-size: 1.5rem;
+  }
+  .s3t p {
+    line-height: 25px;
+    font-size: 0.75rem;
+  }
+  .form h2
+  {
+    font-size: 1.5rem;
+  }
+  .grid{
+    width: 340px;
+    padding: 30px;
+  }
+  .grid span{
+    font-size: 0.6rem;
+  }
+  .networks div{
+    width: 25px;
+    height: 25px;
+  }
+  .networks i{
+    font-size: .8rem;
+  }
+}
+@media (max-width:600px) {
+  .sec1{
+    flex-direction: column;
+    justify-content: center;
+    width: 99.5%;
+    height: 100vh;
+    border-right: 0px;
+    }
+  .s1t{
+    width: 80%;
+    padding: 0;
+    margin: 25% auto;
+    height: 50%;
+  }
+  .img1{
+    height: 50%;
+    width: 100%;
+  }
+  .sec2{
+    flex-direction: column;
+    justify-content: center;
+    width: 99.9%;
+    height: 50vh;
+  }
+  .s2t{
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .sec3{
+    flex-direction: column;
+    justify-content: center;
+    width: 99.9%;
+    height: 50vh;
+    border-right: 0px;
+
+  }
+  .s3t{
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .grid{
+    gap: 2px;
+    margin: 0;
+  }
+  .networks div {
+    margin: 60px 20px;
+  }
+
 }
